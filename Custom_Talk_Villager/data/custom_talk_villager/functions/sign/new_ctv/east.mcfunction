@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ birch_wall_sign if blocks ~ ~0.2265625 ~0 ~ ~0.2265625 ~0 ~ ~ ~ all if blocks ~ ~-0.2734375 ~0 ~ ~-0.2734375 ~0 ~ ~ ~ all run execute if score $ctv_space ctv matches 1.. run function custom_talk_villager:new_ctv_setting
