@@ -1,8 +1,8 @@
 #> custom_talk_villager:setting/kill
 # @within function custom_talk_villager:sign/ctv_setting/give
 
-# 0 = 殺せない
-# 1 = 殺せる
+# 0 = 殺せる
+# 1 = 殺せない
 
 scoreboard players add $ctv_setting_kill ctv 1
 

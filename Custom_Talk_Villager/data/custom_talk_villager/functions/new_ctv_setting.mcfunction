@@ -10,7 +10,7 @@
 
 ## 名前設定
     setblock 8 -60 21 birch_wall_sign[facing=north]{Text2:'{"text":"1行目に名前を入力","bold": true}'} replace
-    data merge block 8 -60 21 {Text2:'{"text":"1行目に名前を入力","bold": true}'}
+    data merge block 8 -60 21 {Text1:'{"text":""}',Text2:'{"text":"1行目に名前を入力","bold": true}'}
 
 
 ## 職業など
