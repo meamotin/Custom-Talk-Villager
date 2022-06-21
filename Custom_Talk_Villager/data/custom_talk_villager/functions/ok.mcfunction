@@ -35,6 +35,9 @@
 # Trades
     data modify entity @e[type=item,tag=ctv_summon,sort=nearest,limit=1] Item.tag.ctv_trades set from storage ctv: new_ctv_set.Offers
 
+# Lore
+    data modify entity @e[type=item,tag=ctv_summon,sort=nearest,limit=1] Item.tag.display.Lore[] set from storage ctv: new_ctv_set.CustomName
+
 
 ## Item TP
     tp @e[type=item,tag=ctv_summon,sort=nearest,limit=1] @p

@@ -17,7 +17,9 @@
     summon villager ~ ~ ~ {Tags:["talk_setting_now"]}
 
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] VillagerData set from storage ctv: kill_villager.VillagerData
-    data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Pos set from storage ctv: kill_villager.Pos
+    data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Pos[0] set from storage ctv: kill_villager.Pos[0]
+    data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Pos[1] set from storage ctv: kill_villager.Pos[1]
+    data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Pos[2] set from storage ctv: kill_villager.Pos[2]
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Offers set from storage ctv: kill_villager.Offers
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] NoAI set from storage ctv: kill_villager.NoAI
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Silent set from storage ctv: kill_villager.Silent

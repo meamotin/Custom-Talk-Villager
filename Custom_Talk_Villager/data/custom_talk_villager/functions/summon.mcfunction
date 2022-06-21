@@ -51,6 +51,15 @@
 # Name
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] CustomName set from storage ctv: summon_data.tag.ctv_name
 # Trades
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[0] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[0].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[1] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[1].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[2] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[2].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[3] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[3].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[4] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[4].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[5] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[5].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[6] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[6].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[7] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[7].maxUses set value 2147483647
+    execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[8] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[8].maxUses set value 2147483647
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] Offers set from storage ctv: summon_data.tag.ctv_trades{}
 
 ## NoAIの場合向き調整
