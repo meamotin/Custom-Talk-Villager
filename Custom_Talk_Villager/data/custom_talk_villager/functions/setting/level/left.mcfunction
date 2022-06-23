@@ -5,6 +5,9 @@
 
 # 1 , 2 , 3 , 4 , 5
 
+## 音
+    playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+
 scoreboard players remove $ctv_setting_level ctv 1
 execute if score $ctv_setting_level ctv matches 0 run scoreboard players set $ctv_setting_level ctv 5
 

@@ -3,7 +3,8 @@
 
 ## 交易 : 情報更新
 
-
+## 音
+    playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.5 2
 
 ## 名前
     data modify entity @e[type=villager,tag=setting_ctv,sort=nearest,limit=1] CustomName set from block 8 -60 21 Text1

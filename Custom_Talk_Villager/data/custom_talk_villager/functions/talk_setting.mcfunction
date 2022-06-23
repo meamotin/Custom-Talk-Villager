@@ -3,6 +3,9 @@
 
 ## 会話内容編集
 
+## 音
+    playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.5 2
+
 ## 対象の村人を絞る
     tag @e[type=villager,tag=ctv,sort=nearest,limit=1] add talk_setting_now
 

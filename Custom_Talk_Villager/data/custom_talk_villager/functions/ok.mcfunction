@@ -3,6 +3,9 @@
 
 ## 村人設定 決定
 
+## 音
+    playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+
 ## 村人のデータをStorageへ
     data modify storage ctv: new_ctv_set set from entity @e[type=villager,tag=setting_ctv,sort=nearest,limit=1]
 

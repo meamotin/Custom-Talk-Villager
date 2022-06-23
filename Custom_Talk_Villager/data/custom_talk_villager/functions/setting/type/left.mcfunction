@@ -3,6 +3,9 @@
 
 ## Left
 
+## 音
+    playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+
 # 0 = 平原
 # 1 = 砂漠
 # 2 = ジャングル

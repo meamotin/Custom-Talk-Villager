@@ -3,6 +3,9 @@
 
 ## 村人召喚
 
+## 音
+    playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.5 2
+
 
 ## Score
     scoreboard players set @s warped_rc 0

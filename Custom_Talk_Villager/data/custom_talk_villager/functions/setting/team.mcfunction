@@ -10,7 +10,7 @@
 # 3 = 無所属
 
 ## 音
-playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+    playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
 
 
 scoreboard players add $ctv_setting_team ctv 1

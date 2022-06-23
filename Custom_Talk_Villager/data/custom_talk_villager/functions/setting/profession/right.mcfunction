@@ -3,6 +3,9 @@
 
 ## Right
 
+## 音
+    playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+
 # 0 = 求職者
 # 1 = 防具鍛冶
 # 2 = 肉屋
