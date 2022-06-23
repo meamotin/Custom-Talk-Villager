@@ -25,7 +25,7 @@
     execute unless score @s ctv_talk_no matches 0 run function custom_talk_villager:talk_data_remove
 
 ## 会話
-   tellraw @s [{"text":"["},{"nbt":"name","storage":"ctv:","interpret": true},{"text": "] "},{"nbt":"talk_now[0]","storage":"ctv:"}]
+    execute if score @e[type=villager,tag=ctv,sort=nearest,limit=1] ctv_pages matches 1.. run tellraw @s [{"text":"["},{"nbt":"name","storage":"ctv:","interpret": true},{"text": "] "},{"nbt":"talk_now[0]","storage":"ctv:"}]
 
 ## Reset
     data modify storage ctv: name set value ""
