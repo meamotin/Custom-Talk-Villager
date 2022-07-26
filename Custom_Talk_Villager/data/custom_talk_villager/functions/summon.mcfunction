@@ -8,7 +8,7 @@
 
 
 ## Score
-    scoreboard players set @s warped_rc 0
+    scoreboard players set @s ctv_warped_rc 0
 
 ## Summon
     summon villager ~ ~ ~ {Tags:["ctv","summon"],PersistenceRequired:1b,Offers:{}}
@@ -25,6 +25,8 @@
     execute if data storage ctv: summon_data.tag{ctv_team:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Team:"Jailer"}
     execute if data storage ctv: summon_data.tag{ctv_team:2} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Team:"Officer"}
     execute if data storage ctv: summon_data.tag{ctv_team:3} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Team:"Other"}
+# Level
+    data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] VillagerData.level set from storage ctv: summon_data.tag.ctv_level
 # kill
     execute if data storage ctv: summon_data.tag{ctv_silent:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Invulnerable:1b}
 # profession

@@ -8,7 +8,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "warped_rc": {
+                "ctv_warped_rc": {
                   "min": 1
                 }
               }
