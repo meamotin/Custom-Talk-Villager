@@ -29,6 +29,14 @@
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] VillagerData.level set from storage ctv: summon_data.tag.ctv_level
 # kill
     execute if data storage ctv: summon_data.tag{ctv_silent:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Invulnerable:1b}
+# type
+    execute if data storage ctv: summon_data.tag{ctv_type:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:plains"}}
+    execute if data storage ctv: summon_data.tag{ctv_type:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:desert"}}
+    execute if data storage ctv: summon_data.tag{ctv_type:2} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:jungle"}}
+    execute if data storage ctv: summon_data.tag{ctv_type:3} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:savanna"}}
+    execute if data storage ctv: summon_data.tag{ctv_type:4} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:snow"}}
+    execute if data storage ctv: summon_data.tag{ctv_type:5} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:swamp"}}
+    execute if data storage ctv: summon_data.tag{ctv_type:6} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:taiga"}}
 # profession
     execute if data storage ctv: summon_data.tag{ctv_profession:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:none"}}
     execute if data storage ctv: summon_data.tag{ctv_profession:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:armorer"}}
@@ -45,14 +53,6 @@
     execute if data storage ctv: summon_data.tag{ctv_profession:12} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:shepherd"}}
     execute if data storage ctv: summon_data.tag{ctv_profession:13} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:toolsmith"}}
     execute if data storage ctv: summon_data.tag{ctv_profession:14} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:weaponsmith"}}
-# type
-    execute if data storage ctv: summon_data.tag{ctv_type:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:plains"}}
-    execute if data storage ctv: summon_data.tag{ctv_type:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:desert"}}
-    execute if data storage ctv: summon_data.tag{ctv_type:2} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:jungle"}}
-    execute if data storage ctv: summon_data.tag{ctv_type:3} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:savanna"}}
-    execute if data storage ctv: summon_data.tag{ctv_type:4} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:snow"}}
-    execute if data storage ctv: summon_data.tag{ctv_type:5} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:swamp"}}
-    execute if data storage ctv: summon_data.tag{ctv_type:6} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:taiga"}}
 # Name
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] CustomName set from storage ctv: summon_data.tag.ctv_name
 # Trades
