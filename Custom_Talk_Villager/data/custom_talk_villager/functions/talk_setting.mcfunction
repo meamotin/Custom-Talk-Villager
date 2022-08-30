@@ -28,6 +28,7 @@
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] VillagerData.level set from storage ctv: kill_villager.VillagerData.level
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] VillagerData.profession set from storage ctv: kill_villager.VillagerData.profession
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] VillagerData.type set from storage ctv: kill_villager.VillagerData.type
+    data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Invulnerable set from storage ctv: kill_villager.Invulnerable
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Offers set from storage ctv: kill_villager.Offers
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] NoAI set from storage ctv: kill_villager.NoAI
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Silent set from storage ctv: kill_villager.Silent

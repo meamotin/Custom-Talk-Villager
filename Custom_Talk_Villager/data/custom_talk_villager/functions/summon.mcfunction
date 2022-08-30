@@ -11,7 +11,7 @@
     scoreboard players set @s ctv_warped_rc 0
 
 ## Summon
-    summon villager ~ ~ ~ {Tags:["ctv","summon"],PersistenceRequired:1b,Offers:{}}
+    summon villager ~ ~ ~ {Tags:["ctv","summon"],PersistenceRequired:1b,CanPickUpLoot:0b}
 
 ## Data Set
     data modify storage ctv: summon_data set from entity @s SelectedItem
@@ -20,6 +20,8 @@
     execute if data storage ctv: summon_data.tag{ctv_noai:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {NoAI:1b}
 # silent
     execute if data storage ctv: summon_data.tag{ctv_silent:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Silent:1b}
+# Kill
+    execute if data storage ctv: summon_data.tag{ctv_kill:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Invulnerable:1b}
 # team
     execute if data storage ctv: summon_data.tag{ctv_team:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Team:"Prisoner"}
     execute if data storage ctv: summon_data.tag{ctv_team:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Team:"Jailer"}
@@ -53,6 +55,7 @@
     execute if data storage ctv: summon_data.tag{ctv_profession:12} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:shepherd"}}
     execute if data storage ctv: summon_data.tag{ctv_profession:13} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:toolsmith"}}
     execute if data storage ctv: summon_data.tag{ctv_profession:14} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:weaponsmith"}}
+
 # Name
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] CustomName set from storage ctv: summon_data.tag.ctv_name
 # Trades
@@ -66,6 +69,9 @@
     execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[7] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[7].maxUses set value 2147483647
     execute if data storage ctv: summon_data.tag.ctv_trades.Recipes[8] run data modify storage ctv: summon_data.tag.ctv_trades.Recipes[8].maxUses set value 2147483647
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] Offers set from storage ctv: summon_data.tag.ctv_trades{}
+
+# 交易アイテムなしの場合
+    execute unless data storage ctv: summon_data.tag.ctv_trades.Recipes[0] run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Offers:{Recipes:[]}}
 
 ## NoAIの場合向き調整
     execute if data storage ctv: summon_data.tag{ctv_noai:1} run data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] Rotation set from entity @s Rotation

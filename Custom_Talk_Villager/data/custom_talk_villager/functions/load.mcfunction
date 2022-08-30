@@ -10,3 +10,20 @@
     scoreboard objectives add ctv_talk_UUID dummy
     scoreboard objectives add ctv_talk_no dummy
     scoreboard objectives add ctv_warped_rc minecraft.used:minecraft.warped_fungus_on_a_stick
+
+## Team
+  # Prisoner
+    team add Prisoner
+    team modify Prisoner color red
+
+  # Jailer
+    team add Jailer
+    team modify Jailer color aqua
+
+  # Officer
+    team add Officer
+    team modify Officer color blue
+
+  # Other
+    team add Other
+    team modify Other color gray

@@ -7,11 +7,11 @@
     playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.5 2
 
 ## 名前
-    data modify entity @e[type=villager,tag=setting_ctv,sort=nearest,limit=1] CustomName set from block 8 -60 21 Text1
+    data modify entity @e[type=villager,tag=setting_ctv,sort=nearest,limit=1] CustomName set from block 4 -60 13 Text1
 
 
 ## 交易
-    data modify storage ctv: new_trades set from block 7 -60 22 Items
+    data modify storage ctv: new_trades set from block 3 -60 14 Items
     scoreboard players set $ctv_setting_trades ctv 0
 
     execute if data storage ctv: new_trades[{Slot:0b}] if data storage ctv: new_trades[{Slot:18b}] run scoreboard players add $ctv_setting_trades ctv 1
