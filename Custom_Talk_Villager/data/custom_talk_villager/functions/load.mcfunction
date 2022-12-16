@@ -10,6 +10,7 @@
     scoreboard objectives add ctv_talk_UUID dummy
     scoreboard objectives add ctv_talk_no dummy
     scoreboard objectives add ctv_warped_rc minecraft.used:minecraft.warped_fungus_on_a_stick
+    scoreboard objectives add ctv_facing dummy
 
 ## Team
   # Prisoner

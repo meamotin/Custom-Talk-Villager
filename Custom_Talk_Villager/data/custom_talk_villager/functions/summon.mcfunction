@@ -40,21 +40,21 @@
     execute if data storage ctv: summon_data.tag{ctv_type:5} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:swamp"}}
     execute if data storage ctv: summon_data.tag{ctv_type:6} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:taiga"}}
 # profession
-    execute if data storage ctv: summon_data.tag{ctv_profession:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:none"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:armorer"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:2} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:butcher"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:3} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:cartographer"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:4} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:cleric"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:5} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:farmer"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:6} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:fisherman"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:7} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:fletcher"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:8} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:leatherworker"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:9} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:librarian"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:10} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:mason"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:11} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:nitwit"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:12} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:shepherd"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:13} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:toolsmith"}}
-    execute if data storage ctv: summon_data.tag{ctv_profession:14} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:weaponsmith"}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:none"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:armorer"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:2} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:butcher"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:3} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:cartographer"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:4} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:cleric"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:5} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:farmer"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:6} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:fisherman"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:7} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:fletcher"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:8} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:leatherworker"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:9} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:librarian"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:10} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:mason"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:11} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:nitwit"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:12} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:shepherd"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:13} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:toolsmith"},Offers:{}}
+    execute if data storage ctv: summon_data.tag{ctv_profession:14} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{profession:"minecraft:weaponsmith"},Offers:{}}
 
 # Name
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] CustomName set from storage ctv: summon_data.tag.ctv_name
@@ -75,7 +75,6 @@
 
 ## NoAIの場合向き調整
     execute if data storage ctv: summon_data.tag{ctv_noai:1} run data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] Rotation set from entity @s Rotation
-
 ## UUID
     execute as @e[type=villager,tag=summon,sort=nearest,limit=1] store result score @s ctv_talk_UUID run data get entity @s UUID[0]
 
