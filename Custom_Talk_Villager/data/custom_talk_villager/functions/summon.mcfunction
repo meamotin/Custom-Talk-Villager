@@ -29,8 +29,6 @@
     execute if data storage ctv: summon_data.tag{ctv_team:3} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Team:"Other"}
 # Level
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] VillagerData.level set from storage ctv: summon_data.tag.ctv_level
-# kill
-    execute if data storage ctv: summon_data.tag{ctv_silent:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Invulnerable:1b}
 # type
     execute if data storage ctv: summon_data.tag{ctv_type:0} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:plains"}}
     execute if data storage ctv: summon_data.tag{ctv_type:1} run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {VillagerData:{type:"minecraft:desert"}}
