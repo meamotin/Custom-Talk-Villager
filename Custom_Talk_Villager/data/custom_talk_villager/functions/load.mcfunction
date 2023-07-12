@@ -23,7 +23,7 @@
 
   # Officer
     team add Officer
-    team modify Officer color blue
+    team modify Officer color green
 
   # Other
     team add Other

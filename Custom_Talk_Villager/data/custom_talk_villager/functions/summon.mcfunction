@@ -69,7 +69,8 @@
     data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] Offers set from storage ctv: summon_data.tag.ctv_trades{}
 
 # 交易アイテムなしの場合
-    execute unless data storage ctv: summon_data.tag.ctv_trades.Recipes[0] run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Offers:{Recipes:[]}}
+    execute unless data storage ctv: summon_data.tag.ctv_trades.Recipes[0] run data merge entity @e[type=villager,tag=summon,sort=nearest,limit=1] {Offers:{}}
+    execute unless data storage ctv: summon_data.tag.ctv_trades.Recipes[0] run tag @e[type=villager,tag=summon,sort=nearest,limit=1] add NoneOffer
 
 ## NoAIの場合向き調整
     execute if data storage ctv: summon_data.tag{ctv_noai:1} run data modify entity @e[type=villager,tag=summon,sort=nearest,limit=1] Rotation set from entity @s Rotation

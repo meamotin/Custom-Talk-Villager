@@ -7,7 +7,7 @@
     playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.5 2
 
 ## 名前
-    execute at @e[type=marker,tag=CustomTalkVillager_Set,sort=nearest,limit=1] run data modify entity @e[type=villager,tag=setting_ctv,sort=nearest,limit=1] CustomName set from block ^ ^ ^2 Text1
+    execute at @e[type=marker,tag=CustomTalkVillager_Set,sort=nearest,limit=1] run data modify entity @e[type=villager,tag=setting_ctv,sort=nearest,limit=1] CustomName set from block ^ ^ ^2 front_text.messages[0]
 
 
 ## 交易

@@ -18,6 +18,9 @@
 ## 村人に会話情報を入れる
     data modify entity @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] Inventory[] set from storage ctv: talk_pages_setting
 
+## 取引情報
+    execute as @e[type=villager,tag=talk_setting_now,sort=nearest,limit=1] if data entity @s {Tags:["NoneOffer"]} run data remove entity @s Offers.Recipes
+
 ## タグ消す
     tag @e[type=villager,tag=ctv] remove talk_setting_now
 
